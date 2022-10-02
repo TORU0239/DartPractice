@@ -30,8 +30,8 @@ class _Idol {
   // thus we have to use values that const works.
   // named constructor
   _Idol.fromList(List values)
-      : this.members = values[0],
-        this.name = values[1];
+      : members = values[0],
+        name = values[1];
 
   void sayHello() {
     print('Hello! We are $name!');

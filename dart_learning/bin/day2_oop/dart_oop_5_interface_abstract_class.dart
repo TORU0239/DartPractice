@@ -23,6 +23,7 @@ abstract class IdolInterface {
 }
 
 class BoyGroup implements IdolInterface {
+  @override
   String name;
 
   BoyGroup(this.name);
@@ -34,6 +35,7 @@ class BoyGroup implements IdolInterface {
 }
 
 class GirlGroup implements IdolInterface {
+  @override
   String name;
 
   GirlGroup(this.name);
