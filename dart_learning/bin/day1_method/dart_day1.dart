@@ -8,6 +8,11 @@ void main(List<String> arguments) {
   print(calculator(add, x: 10, y: 20, z: 35)); // 10 + 20 + 35 = 65
   print(calculator(subtract, x: 10, y: 20, z: 35)); // 10 - 20 -35 = -45
   print(calculator(multiply, x: 10, y: 20, z: 35)); // 10 * 20 * 35 = 7000
+
+  print(namedParameter(first: "FIRST", second: "SECOND", third: "THIRD"));
+  print(requiredParameter(first: "FIRST", second: "SECOND"));
+  print(neitherRequiredAndNamed("first", "second"));
+  print(optionalParameter("first"));
 }
 
 // default value of parameters of a method
@@ -33,3 +38,14 @@ typedef Operation = int Function(
 int calculator(Operation operation,
         {required int x, required int y, required int z}) =>
     operation(x: x, y: y, z: z);
+
+String namedParameter(
+    {String first = "", String second = "", String third = ""}) {
+  return "$first, $second, $third";
+}
+
+String requiredParameter({required String? first, required String? second}) =>
+    "$first, $second";
+String neitherRequiredAndNamed(String first, String second) =>
+    "$first, $second";
+optionalParameter(String first, [String? second]) => "$first, $second";
