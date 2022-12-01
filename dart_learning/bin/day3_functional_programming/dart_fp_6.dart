@@ -1,7 +1,6 @@
 void main() {
   // The use of Reduce()
   List<int> numbers = [1, 3, 5, 7, 9];
-
   final result = numbers.reduce((prev, next) {
     print('------------');
     print('prev: $prev');
@@ -9,6 +8,10 @@ void main() {
     print('total: ${prev + next}');
     return prev + next;
   });
+
+  // final result = numbers.reduce((prev, next) {
+  //   return prev + next;
+  // });
 
   print(result);
 

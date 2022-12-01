@@ -16,4 +16,16 @@ void main() {
   final values = harryPotter.values.map((x) => '해리포터 $x').toList();
   print(keys);
   print(values);
+
+  Map<String, String> idols = {
+    "JYP": "TWICE",
+    "HYBE": "BTS",
+    "YG": "BLACKPINK",
+    "Starship": "IVE"
+  };
+
+  final idolMapping =
+      idols.map((key, value) => MapEntry('Enter corp $key', 'Idol $value'));
+
+  print(idolMapping);
 }

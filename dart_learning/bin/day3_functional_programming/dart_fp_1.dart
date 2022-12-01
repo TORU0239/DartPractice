@@ -9,6 +9,7 @@ void main() {
   // Map to List, retrieving keys and values
   Map blackPinkMap = blackPink.asMap();
   print(blackPinkMap.keys.toList());
+  print(blackPinkMap.keys);
   print(blackPinkMap.values);
 
   // Set to List

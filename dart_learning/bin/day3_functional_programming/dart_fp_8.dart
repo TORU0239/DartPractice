@@ -10,4 +10,9 @@ void main() {
 
   print(odd ==
       [...odd]); // The result of cascading operator is different to each other
+
+  final list = ['Nasi Lemak', 'Roti Canai', 'CKT'];
+  var result =
+      list.map((elements) => 'Malaysian food $elements').take(2).toList();
+  print(result);
 }

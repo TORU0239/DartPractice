@@ -25,4 +25,34 @@ void main() {
 
   final bts = people.where((x) => x['group'] == 'BTS');
   print(bts);
+
+  List<Map<String, String>> gdg = [
+    {'name': 'Toru', 'domain': 'Android'},
+    {
+      'name': 'Hassan',
+      'domain': 'Android',
+    },
+    {
+      'name': 'Shang Yi',
+      'domain': 'Firebase',
+    },
+    {
+      'name': 'Jecelyn',
+      'domain': 'Web',
+    },
+    {
+      'name': 'Thu Ya',
+      'domain': 'Cloud',
+    },
+    {
+      'name': 'Vin',
+      'domain': 'Web',
+    }
+  ];
+
+  final android = gdg.where((x) => x['domain'] == 'Android');
+  print(android.toList());
+
+  final web = gdg.where((x) => x['domain'] == 'Web');
+  print(web);
 }
