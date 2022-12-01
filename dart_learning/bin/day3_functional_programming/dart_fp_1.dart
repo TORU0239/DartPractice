@@ -14,4 +14,7 @@ void main() {
   // Set to List
   Set blackPinkSet = Set.from(blackPink);
   print(blackPinkSet.toList());
+
+  final List<String> test = ["test1", "test2", "test3", "test4", "test1"];
+  print(test.toSet());
 }
