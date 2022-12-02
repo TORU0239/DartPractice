@@ -41,11 +41,11 @@ class Idol {
   Idol({required this.name, required this.membersCount});
 
   void sayName() {
-    print('We are ${this.name}.');
+    print('We are $name.');
   }
 
   void sayMembersCount() {
-    print('${this.name} has ${this.membersCount} members!');
+    print('$name has $membersCount members!');
   }
 }
 
